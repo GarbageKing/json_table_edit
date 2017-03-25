@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+	<link rel="stylesheet" href="css/plus.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+     <div class="container">
+	
+	<div class="row">
+		<div class="col-xs-12">	
+			<h1>JSON-TABLE</h1>
+		</div>
+		
+     	</div>	
+
+	<div class="row">
+		<div class="col-md-8 ">
+            <table>
+                <tr>
+		    <th>Placement</th>
+                    <th>Name</th>
+                    <th>Value</th> 
+		    <th>Del</th>                   
+                </tr>
+		
+            </table>
+		<div class="buttonz"><button class="btn btn-info" id="addrow">Add Row</button></div>
+		<br>
+		<div class="buttonz">Table to <button class="btn btn-info" id="tojason">Json</button></div>
+		</div>
+		<div class="col-md-4">          
+	    <input id="myFile" type="file"/>  	    	    
+            <textarea rows="10" id="jason">[{"name":"name1", "value":"value1"},{"name":"name2", "value":"value2"}]</textarea>
+            <div class="buttonz">Json to <button class="btn btn-info" id="totable">Table</button></div>
+		</div>
+	</div>
+
+	<div id="usinfo" class="row">
+		<div class="col-xs-12">
+			<ul>
+		<li>Вставьте JSON в виде текста в textarea, или загрузите его с файла. <span style="color:#ff0000">Важно соблюдать именно такой формат как показан в плейсхолдере!</span></li>
+		<li>Чтобы переместить строку - для начала отметьте чекбокс строки-ориентира. Затем отметьте строку которую вам нужно поставить после строки-ориентира.</li>
+		<li>Чтобы удалить строку - нажмите кнопку Х, которая находится на этой строке.</li>
+		<li>Чтобы изменить строку - меняйте значения в полях.</li>
+		<li>Чтобы добавить новую пустую строку - нажмите Add Row.</li>
+			</ul>
+		</div>
+	</div>
+
+     </div>        
+    </body>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/dascript.js"></script>
+</html>
